@@ -1,6 +1,6 @@
 # UsHub
 
-![UsHub Logo](https://raw.githubusercontent.com/adityatrips/usHub/master/assets/icon.png?raw=true)
+<img src="https://raw.githubusercontent.com/adityatrips/usHub/master/assets/icon.png?raw=true" alt="UsHub Logo" style="width:300px; aspect-ratio:1/1"/>
 
 ## Overview
 
