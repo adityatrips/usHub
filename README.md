@@ -2,7 +2,7 @@
 
 ## Overview
 
-UsHub is a personalized application designed especially for Anjali Singh. It is a Flutter-based mobile application that leverages Firebase for backend functionalities. The app is created to celebrate and cherish the relationship with Anjali, incorporating various features that make it unique and meaningful.
+UsHub is a personalized application designed especially for my girlfriend, ***Anjali Singh***. It is a Flutter-based mobile application that leverages Firebase for backend functionalities. The app is created to celebrate and cherish the relationship with Anjali, incorporating various features that make it unique and meaningful.
 
 ## Tech Stack
 
