@@ -36,6 +36,34 @@ UsHub starts with a custom-designed splash screen that adds a touch of uniquenes
 
 The app icon is specially designed to be unique and personal, representing the essence of the relationship between Anjali Singh and the user.
 
+# Free and Fair Use Statement for PHub Color Scheme
+
+The PHub color scheme utilized in the UsHub application is used strictly for aesthetic and design purposes. It is not intended to imply any association or endorsement from the original source.
+
+## Permissions Granted:
+
+1. **Aesthetic Use Only:** The PHub color scheme is employed solely for aesthetic and design elements within the UsHub application.
+
+2. **Non-Commercial Use:** The usage of the PHub color scheme is strictly non-commercial, and no financial gain or profit is derived from its incorporation.
+
+3. **Attribution:** While not mandatory, providing attribution to the original source of the color scheme is appreciated but not required.
+
+## Restrictions:
+
+1. **Misrepresentation:** The UsHub application does not claim any affiliation or endorsement from the original source of the PHub color scheme. It is essential to avoid any misrepresentation of association.
+
+2. **Inappropriate Content:** The PHub color scheme should not be used in a manner that promotes or associates with inappropriate or offensive content.
+
+3. **Commercial Use:** Any commercial use or exploitation of the PHub color scheme for profit is strictly prohibited without explicit permission from the original rights holder.
+
+## Disclaimer:
+
+The UsHub application and its use of the PHub color scheme are independent and not officially affiliated with the original source. This free and fair use statement is provided to clarify the terms under which the color scheme is employed, ensuring transparency and adherence to ethical practices.
+
+By using the UsHub application, users acknowledge and agree to the terms outlined in this statement regarding the use of the PHub color scheme.
+
+For inquiries or concerns, please contact [me by email](mailto:adityatripathi.at04@gmail.com).
+
 ## Conclusion
 
 UsHub is not just a mobile application; it's a personalized space crafted with love and care. From custom designs to intimate features, the app aims to enhance the bond between Anjali Singh and the user. It stands as a testament to the special connection they share.
