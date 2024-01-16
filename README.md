@@ -46,8 +46,6 @@ The PHub color scheme utilized in the UsHub application is used strictly for aes
 
 2. **Non-Commercial Use:** The usage of the PHub color scheme is strictly non-commercial, and no financial gain or profit is derived from its incorporation.
 
-3. **Attribution:** While not mandatory, providing attribution to the original source of the color scheme is appreciated but not required.
-
 ## Restrictions:
 
 1. **Misrepresentation:** The UsHub application does not claim any affiliation or endorsement from the original source of the PHub color scheme. It is essential to avoid any misrepresentation of association.
