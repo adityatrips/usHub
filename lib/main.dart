@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:anjali/pages/auth_page.dart';
 import 'package:anjali/pages/home_page.dart';
 import 'package:anjali/pages/our_story_page.dart';
@@ -6,6 +8,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:restart_app/restart_app.dart';
 
 import 'firebase_options.dart';
 
@@ -16,6 +20,9 @@ void main() async {
   );
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   runApp(const MyApp());
+  sleep(
+    const Duration(milliseconds: 2500),
+  );
   FlutterNativeSplash.remove();
 }
 
@@ -39,9 +46,6 @@ class _MyAppState extends State<MyApp> {
   ];
 
   changeIndex(int index) {
-    if (index == 2) {
-      _auth.signOut();
-    }
     setState(() {
       _selectedIndex = index;
     });
@@ -88,29 +92,17 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {
-        "/home": (BuildContext context) => const HomeScreen(),
-        "/our_story": (BuildContext context) => const OurStory(),
-        "/auth": (BuildContext context) => Authenticate(
-              loginStatus: loginStatus,
-              setLoginState: setLoginState,
-            ),
-      },
       debugShowCheckedModeBanner: false,
       title: "Anjali, my love",
-      theme: ThemeData.from(
-        colorScheme: const ColorScheme(
-          primary: Color.fromARGB(255, 255, 163, 26),
-          secondary: Color.fromARGB(255, 255, 163, 26),
-          background: Color.fromARGB(255, 27, 27, 27),
-          surface: Color.fromARGB(255, 27, 27, 27),
-          error: Colors.red,
-          onPrimary: Color(0xff1b1b1b),
-          onSecondary: Color(0xff1b1b1b),
-          onSurface: Color(0xFFFFFFFF),
-          onBackground: Color(0xFFFFFFFF),
-          onError: Color(0x001b1b1b),
-          brightness: Brightness.dark,
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        textTheme: GoogleFonts.gloriaHallelujahTextTheme(
+          Theme.of(context).textTheme,
+        ),
+        primarySwatch: Colors.blue,
+        colorScheme: const ColorScheme.light(
+          background: Colors.white,
+          primary: Colors.blue,
         ),
         useMaterial3: true,
       ),
@@ -118,26 +110,27 @@ class _MyAppState extends State<MyApp> {
         resizeToAvoidBottomInset: true,
         key: scaffoldKey,
         appBar: AppBar(
-          actions: [
+          foregroundColor: Colors.blue[900],
+          surfaceTintColor: Colors.blue[900],
+          shadowColor: Colors.blue[100],
+          actions: loginStatus ? [
             IconButton(
               icon: const Icon(Icons.logout_rounded),
-              color: const Color(0xFF1b1b1b),
-              onPressed: () async {
-                await _auth.signOut();
-                setState(() {
-                  loginStatus = false;
-                });
+              color: const Color.fromARGB(255, 13, 71, 161),
+              onPressed: () {
+                _auth.signOut();
+                Restart.restartApp();
               },
             )
-          ],
+          ] : [],
           title: Text(
             "Completed ${daysBetween(DateTime(2022, 12, 24), DateTime.now())} days of us!",
             style: const TextStyle(
               fontSize: 20,
-              color: Color(0xFF1b1b1b),
+              color: Color.fromARGB(255, 13, 71, 161),
             ),
           ),
-          backgroundColor: const Color.fromARGB(255, 255, 163, 26),
+          backgroundColor: Colors.white,
           elevation: 10,
         ),
         bottomNavigationBar: BottomNavigationBar(
@@ -145,8 +138,11 @@ class _MyAppState extends State<MyApp> {
           showUnselectedLabels: false,
           currentIndex: _selectedIndex,
           showSelectedLabels: true,
+          selectedIconTheme: const IconThemeData(
+            color: Colors.blue,
+          ),
           unselectedIconTheme: const IconThemeData(
-            color: Color(0xFFFFFFFF),
+            color: Color.fromARGB(255, 13, 71, 161),
           ),
           onTap: (index) {
             setState(() {

@@ -60,13 +60,12 @@ class _AuthenticateState extends State<Authenticate> {
             duration: Duration(milliseconds: 2000),
             closeIconColor: Color(0x001b1b1b),
             backgroundColor: Colors.green,
-            padding: EdgeInsets.all(5),
             behavior: SnackBarBehavior.floating,
             showCloseIcon: true,
             content: Text(
               'Your account is created',
               style: TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26), fontSize: 14),
+                  color: Color.fromARGB(255, 13, 71, 161), fontSize: 14),
             ),
           ),
         );
@@ -75,15 +74,14 @@ class _AuthenticateState extends State<Authenticate> {
           ScaffoldMessenger.of(scaffoldKey.currentContext!).showSnackBar(
             const SnackBar(
               duration: Duration(milliseconds: 2000),
-              closeIconColor: Color.fromARGB(255, 255, 163, 26),
+              closeIconColor: Color.fromARGB(255, 13, 71, 161),
               backgroundColor: Colors.red,
-              padding: EdgeInsets.all(5),
               behavior: SnackBarBehavior.floating,
               showCloseIcon: true,
               content: Text(
                 'The password provided is too weak',
                 style: TextStyle(
-                    color: Color.fromARGB(255, 255, 163, 26), fontSize: 14),
+                    color: Color.fromARGB(255, 13, 71, 161), fontSize: 14),
               ),
             ),
           );
@@ -91,15 +89,14 @@ class _AuthenticateState extends State<Authenticate> {
           ScaffoldMessenger.of(scaffoldKey.currentContext!).showSnackBar(
             const SnackBar(
               duration: Duration(milliseconds: 2000),
-              closeIconColor: Color.fromARGB(255, 255, 163, 26),
+              closeIconColor: Color.fromARGB(255, 13, 71, 161),
               backgroundColor: Colors.red,
-              padding: EdgeInsets.all(5),
               behavior: SnackBarBehavior.floating,
               showCloseIcon: true,
               content: Text(
                 'The account already exists for that email',
                 style: TextStyle(
-                    color: Color.fromARGB(255, 255, 163, 26), fontSize: 14),
+                    color: Color.fromARGB(255, 13, 71, 161), fontSize: 14),
               ),
             ),
           );
@@ -109,15 +106,14 @@ class _AuthenticateState extends State<Authenticate> {
       ScaffoldMessenger.of(scaffoldKey.currentContext!).showSnackBar(
         const SnackBar(
           duration: Duration(milliseconds: 2000),
-          closeIconColor: Color.fromARGB(255, 255, 163, 26),
+          closeIconColor: Color.fromARGB(255, 13, 71, 161),
           backgroundColor: Colors.red,
-          padding: EdgeInsets.all(5),
           behavior: SnackBarBehavior.floating,
           showCloseIcon: true,
           content: Text(
             'Password and Confirm Password does not match',
             style: TextStyle(
-                color: Color.fromARGB(255, 255, 163, 26), fontSize: 14),
+                color: Color.fromARGB(255, 13, 71, 161), fontSize: 14),
           ),
         ),
       );
@@ -136,15 +132,14 @@ class _AuthenticateState extends State<Authenticate> {
         ScaffoldMessenger.of(scaffoldKey.currentContext!).showSnackBar(
           const SnackBar(
             duration: Duration(milliseconds: 2000),
-            closeIconColor: Color.fromARGB(255, 255, 163, 26),
+            closeIconColor: Color.fromARGB(255, 13, 71, 161),
             backgroundColor: Colors.red,
-            padding: EdgeInsets.all(5),
             behavior: SnackBarBehavior.floating,
             showCloseIcon: true,
             content: Text(
               'No user found for that email',
               style: TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26), fontSize: 14),
+                  color: Color.fromARGB(255, 13, 71, 161), fontSize: 14),
             ),
           ),
         );
@@ -152,15 +147,14 @@ class _AuthenticateState extends State<Authenticate> {
         ScaffoldMessenger.of(scaffoldKey.currentContext!).showSnackBar(
           const SnackBar(
             duration: Duration(milliseconds: 2000),
-            closeIconColor: Color.fromARGB(255, 255, 163, 26),
+            closeIconColor: Color.fromARGB(255, 13, 71, 161),
             backgroundColor: Colors.red,
-            padding: EdgeInsets.all(5),
             behavior: SnackBarBehavior.floating,
             showCloseIcon: true,
             content: Text(
               'Wrong password provided for that user',
               style: TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26), fontSize: 14),
+                  color: Color.fromARGB(255, 13, 71, 161), fontSize: 14),
             ),
           ),
         );
@@ -178,28 +172,34 @@ class _AuthenticateState extends State<Authenticate> {
             const Text(
               "LOGIN",
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 30,
+                letterSpacing: 10,
                 fontWeight: FontWeight.w900,
-                color: Color.fromARGB(255, 255, 163, 26),
+                color: Color.fromARGB(255, 13, 71, 161),
               ),
-            ),
-            const SizedBox(
-              height: 8,
             ),
             TextField(
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
               decoration: const InputDecoration(
-                border: InputBorder.none,
-                contentPadding: EdgeInsets.all(16),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
                 labelText: 'Email',
                 labelStyle: TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26),
+                  color: Color.fromARGB(255, 13, 71, 161),
                 ),
               ),
               style: const TextStyle(
                 fontSize: 14,
-                color: Color.fromARGB(255, 255, 163, 26),
+                color: Color.fromARGB(255, 13, 71, 161),
               ),
             ),
             const SizedBox(
@@ -210,19 +210,28 @@ class _AuthenticateState extends State<Authenticate> {
               obscureText: !_showPassword,
               style: const TextStyle(
                 fontSize: 14,
-                color: Color.fromARGB(255, 255, 163, 26),
+                color: Color.fromARGB(255, 13, 71, 161),
               ),
               decoration: InputDecoration(
-                border: InputBorder.none,
-                contentPadding: const EdgeInsets.all(16),
                 labelText: 'Password',
                 labelStyle: const TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26),
+                  color: Color.fromARGB(255, 13, 71, 161),
+                ),
+                focusedBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
+                enabledBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
                 ),
                 suffixIcon: IconButton(
                   icon: Icon(
-                      _showPassword ? Icons.visibility : Icons.visibility_off,
-                      color: const Color.fromARGB(255, 255, 163, 26)),
+                    _showPassword ? Icons.visibility : Icons.visibility_off,
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
                   onPressed: () {
                     setState(() {
                       _showPassword = !_showPassword;
@@ -247,7 +256,7 @@ class _AuthenticateState extends State<Authenticate> {
                     child: const Text(
                       'Login',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 255, 163, 26),
+                        color: Color.fromARGB(255, 13, 71, 161),
                       ),
                     ),
                   ),
@@ -268,7 +277,7 @@ class _AuthenticateState extends State<Authenticate> {
                     child: const Text(
                       'Register',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 255, 163, 26),
+                        color: Color.fromARGB(255, 13, 71, 161),
                       ),
                     ),
                   ),
@@ -293,7 +302,7 @@ class _AuthenticateState extends State<Authenticate> {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w900,
-                color: Color.fromARGB(255, 255, 163, 26),
+                color: Color.fromARGB(255, 13, 71, 161),
               ),
             ),
             const SizedBox(
@@ -302,16 +311,24 @@ class _AuthenticateState extends State<Authenticate> {
             TextField(
               controller: _nameController,
               decoration: const InputDecoration(
-                border: InputBorder.none,
-                contentPadding: EdgeInsets.all(16),
                 labelText: 'Name',
                 labelStyle: TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26),
+                  color: Color.fromARGB(255, 13, 71, 161),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
                 ),
               ),
               style: const TextStyle(
                 fontSize: 14,
-                color: Color.fromARGB(255, 255, 163, 26),
+                color: Color.fromARGB(255, 13, 71, 161),
               ),
             ),
             const SizedBox(height: 8),
@@ -319,16 +336,24 @@ class _AuthenticateState extends State<Authenticate> {
               keyboardType: TextInputType.emailAddress,
               controller: _emailController,
               decoration: const InputDecoration(
-                border: InputBorder.none,
-                contentPadding: EdgeInsets.all(16),
                 labelText: 'Email',
                 labelStyle: TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26),
+                  color: Color.fromARGB(255, 13, 71, 161),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
                 ),
               ),
               style: const TextStyle(
                 fontSize: 14,
-                color: Color.fromARGB(255, 255, 163, 26),
+                color: Color.fromARGB(255, 13, 71, 161),
               ),
             ),
             const SizedBox(height: 8),
@@ -337,21 +362,30 @@ class _AuthenticateState extends State<Authenticate> {
               obscureText: !_isPasswordVisible,
               style: const TextStyle(
                 fontSize: 14,
-                color: Color.fromARGB(255, 255, 163, 26),
+                color: Color.fromARGB(255, 13, 71, 161),
               ),
               decoration: InputDecoration(
-                border: InputBorder.none,
-                contentPadding: const EdgeInsets.all(16),
                 labelText: 'Password',
+                focusedBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
+                enabledBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
                 labelStyle: const TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26),
+                  color: Color.fromARGB(255, 13, 71, 161),
                 ),
                 suffixIcon: IconButton(
                   icon: Icon(
-                      _isPasswordVisible
-                          ? Icons.visibility_off
-                          : Icons.visibility,
-                      color: const Color.fromARGB(255, 255, 163, 26)),
+                    _isPasswordVisible
+                        ? Icons.visibility_off
+                        : Icons.visibility,
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
                   onPressed: () {
                     setState(() {
                       _isPasswordVisible = !_isPasswordVisible;
@@ -365,22 +399,30 @@ class _AuthenticateState extends State<Authenticate> {
               controller: _confirmPasswordController,
               style: const TextStyle(
                 fontSize: 14,
-                color: Color.fromARGB(255, 255, 163, 26),
+                color: Color.fromARGB(255, 13, 71, 161),
               ),
               obscureText: !_isConfirmPasswordVisible,
               decoration: InputDecoration(
-                border: InputBorder.none,
-                contentPadding: const EdgeInsets.all(16),
+                focusedBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
+                enabledBorder: const UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color.fromARGB(255, 13, 71, 161),
+                  ),
+                ),
                 labelText: 'Confirm Password',
                 labelStyle: const TextStyle(
-                  color: Color.fromARGB(255, 255, 163, 26),
+                  color: Color.fromARGB(255, 13, 71, 161),
                 ),
                 suffixIcon: IconButton(
                   icon: Icon(
                     _isConfirmPasswordVisible
                         ? Icons.visibility_off
                         : Icons.visibility,
-                    color: const Color.fromARGB(255, 255, 163, 26),
+                    color: const Color.fromARGB(255, 13, 71, 161),
                   ),
                   onPressed: () {
                     setState(() {
@@ -404,7 +446,7 @@ class _AuthenticateState extends State<Authenticate> {
                     child: const Text(
                       'Register',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 255, 163, 26),
+                        color: Color.fromARGB(255, 13, 71, 161),
                       ),
                     ),
                   ),
@@ -418,7 +460,7 @@ class _AuthenticateState extends State<Authenticate> {
                     child: const Text(
                       'Login',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 255, 163, 26),
+                        color: Color.fromARGB(255, 13, 71, 161),
                       ),
                     ),
                     onPressed: () {
@@ -450,7 +492,7 @@ class _AuthenticateState extends State<Authenticate> {
                   "You are already logged in, please proceed with my app.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Color.fromARGB(255, 255, 163, 26),
+                    color: Color.fromARGB(255, 13, 71, 161),
                   ),
                 ),
         ),

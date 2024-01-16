@@ -44,33 +44,40 @@ class _OurStoryState extends State<OurStory> {
 
                 return Column(
                   children: [
-                    ListTile(
-                      tileColor: const Color.fromARGB(255, 255, 163, 26),
-                      isThreeLine: true,
-                      title: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          poem['poem'].toString(),
-                          style: const TextStyle(
-                            color: Color(0xFF1B1B1B),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 8,
+                      ),
+                      child: ListTile(
+                        shape: const  RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(25),
+                          ),
+                        ),
+                        tileColor: Colors.blue[100],
+                        isThreeLine: true,
+                        title: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            poem['poem'].toString(),
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 13, 71, 161),
+                            ),
+                          ),
+                        ),
+                        subtitle: Padding(
+                          padding: const EdgeInsets.only(
+                            bottom: 8.0,
+                          ),
+                          child: Text(
+                            'With love, \n${poem["addedBy"]}',
+                            textAlign: TextAlign.right,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 13, 71, 161),
+                            ),
                           ),
                         ),
                       ),
-                      subtitle: Padding(
-                        padding: const EdgeInsets.only(
-                          bottom: 8.0,
-                        ),
-                        child: Text(
-                          'With love, \n${poem["addedBy"]}',
-                          textAlign: TextAlign.right,
-                          style: const TextStyle(
-                            color: Color(0xFF1B1B1B),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 16,
                     ),
                   ],
                 );
@@ -78,7 +85,7 @@ class _OurStoryState extends State<OurStory> {
                 //   margin: const EdgeInsets.only(bottom: 10),
                 //   decoration: BoxDecoration(
                 //     border: Border.all(
-                //       color: const Color.fromARGB(255, 255, 163, 26),
+                //       color: Color.fromARGB(255, 13, 71, 161),
                 //     ),
                 //     // color:
                 //     borderRadius: const BorderRadius.all(
@@ -94,7 +101,7 @@ class _OurStoryState extends State<OurStory> {
                 //           poem['poem'].toString(),
                 //           style: const TextStyle(
                 //             fontSize: 14,
-                //             color: Color.fromARGB(255, 255, 163, 26),
+                //             color: Color.fromARGB(255, 13, 71, 161),
                 //           ),
                 //         ),
                 //         Padding(

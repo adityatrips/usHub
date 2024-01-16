@@ -17,27 +17,41 @@ class _SendMessageBoxState extends State<SendMessageBox> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      shape: const  RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(
+          Radius.circular(25),
+        ),
+      ),
       title: TextField(
         minLines: null,
         textAlignVertical: TextAlignVertical.center,
         controller: _textEditingController,
         keyboardType: TextInputType.multiline,
         decoration: InputDecoration(
-          border: InputBorder.none,
+          focusedBorder: const UnderlineInputBorder(
+            borderSide: BorderSide(
+              color: Color.fromARGB(255, 13, 71, 161),
+            ),
+          ),
+          enabledBorder: const UnderlineInputBorder(
+            borderSide: BorderSide(
+              color: Color.fromARGB(255, 13, 71, 161),
+            ),
+          ),
           contentPadding: const EdgeInsets.symmetric(
             vertical: 8,
           ),
           alignLabelWithHint: true,
           hintText: 'Send your love, start typing...',
           hintStyle: const TextStyle(
-            color: Color.fromARGB(255, 255,163,26),
+            color: Color.fromARGB(255, 13, 71, 161),
           ),
           suffix: SizedBox(
             width: 100,
             child: TextButton(
               style: TextButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 255,163,26),
-                foregroundColor: Colors.white,
+                backgroundColor: const Color.fromARGB(255, 13, 71, 161),
+                foregroundColor: Colors.blue[100],
               ),
               child: const Text("Send!"),
               onPressed: () => _sendMessage(),
@@ -46,7 +60,7 @@ class _SendMessageBoxState extends State<SendMessageBox> {
         ),
         style: const TextStyle(
           fontSize: 14,
-          color: Color.fromARGB(255, 255, 163, 26),
+          color: Color.fromARGB(255, 13, 71, 161),
           fontWeight: FontWeight.w500,
           letterSpacing: 0.25,
         ),
@@ -73,7 +87,6 @@ class _SendMessageBoxState extends State<SendMessageBox> {
             duration: Duration(milliseconds: 2000),
             closeIconColor: Colors.white,
             backgroundColor: Colors.red,
-            padding: EdgeInsets.all(5),
             behavior: SnackBarBehavior.floating,
             showCloseIcon: true,
             content: Text(

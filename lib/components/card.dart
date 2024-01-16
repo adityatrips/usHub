@@ -9,7 +9,7 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: const Color.fromARGB(255, 255,163,26),
+      color: Color.fromARGB(255, 13, 71, 161),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
       ),
