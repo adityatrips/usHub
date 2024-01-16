@@ -14,27 +14,27 @@ UsHub is a personalized application designed especially for my girlfriend, ***An
 
 ## Features
 
-### Poems Section
+- Poems Section
 
 The app includes a dedicated section that contains poems personally written for Anjali Singh. This feature allows for a heartfelt expression of emotions through poetry.
 
-### Personal Chat Room
+- Personal Chat Room
 
 UsHub provides a private and personal chat room exclusively for Anjali and the user. This space is intended for intimate conversations and sharing special moments.
 
-### Relationship Countdown
+- Relationship Countdown
 
 A unique feature of UsHub is the countdown functionality, keeping track of the days Anjali Singh and the user have been together. This serves as a delightful reminder of the journey they've shared.
 
-### PHub Colorscheme
+- PHub Colorscheme
 
 The application features a color scheme inspired by the PHub theme, adding a touch of familiarity and personalization to the overall visual experience.
 
-### Custom Designed Splash Screen
+- Custom Designed Splash Screen
 
 UsHub starts with a custom-designed splash screen that adds a touch of uniqueness to the app's initial loading experience.
 
-### Custom Designed Icon
+- Custom Designed Icon
 
 The app icon is specially designed to be unique and personal, representing the essence of the relationship between Anjali Singh and the user.
 
