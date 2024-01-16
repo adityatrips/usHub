@@ -4,16 +4,6 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -53,10 +43,6 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC5yOrWij0NU4ze4SyqRr4lRZaENs0NBPo',
-    appId: '1:564283515048:android:e8c52fd25712c23f9d629d',
-    messagingSenderId: '564283515048',
-    projectId: 'anniversary-chat-app',
-    storageBucket: 'anniversary-chat-app.appspot.com',
+    // Insert credentials here
   );
 }
