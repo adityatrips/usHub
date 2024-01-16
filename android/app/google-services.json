@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "564283515048",
+    "project_id": "anniversary-chat-app",
+    "storage_bucket": "anniversary-chat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564283515048:android:e8c52fd25712c23f9d629d",
+        "android_client_info": {
+          "package_name": "com.aditya.anjali"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564283515048-o321cf4vcmlrogj38fljtegh80kod6bd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5yOrWij0NU4ze4SyqRr4lRZaENs0NBPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564283515048-o321cf4vcmlrogj38fljtegh80kod6bd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "564283515048-ooo8b1mmpvmtq325r4fqk0k3cuqnj16b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.coupleQuiz"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
