@@ -14,29 +14,17 @@ UsHub is a personalized application designed especially for my girlfriend, ***An
 
 ## Features
 
-1. Poems Section
+1. **Poems Section:** The app includes a dedicated section that contains poems personally written for Anjali Singh. This feature allows for a heartfelt expression of emotions through poetry.
 
-The app includes a dedicated section that contains poems personally written for Anjali Singh. This feature allows for a heartfelt expression of emotions through poetry.
+2. **Personal Chat Room:** UsHub provides a private and personal chat room exclusively for Anjali and the user. This space is intended for intimate conversations and sharing special moments.
 
-2. Personal Chat Room
+3. **Relationship Countdown:** A unique feature of UsHub is the countdown functionality, keeping track of the days Anjali Singh and the user have been together. This serves as a delightful reminder of the journey they've shared.
 
-UsHub provides a private and personal chat room exclusively for Anjali and the user. This space is intended for intimate conversations and sharing special moments.
+4. **PHub Colorscheme:** The application features a color scheme inspired by the PHub theme, adding a touch of familiarity and personalization to the overall visual experience.
 
-3. Relationship Countdown
+5. **Custom Designed Splash Screen:** UsHub starts with a custom-designed splash screen that adds a touch of uniqueness to the app's initial loading experience.
 
-A unique feature of UsHub is the countdown functionality, keeping track of the days Anjali Singh and the user have been together. This serves as a delightful reminder of the journey they've shared.
-
-4. PHub Colorscheme
-
-The application features a color scheme inspired by the PHub theme, adding a touch of familiarity and personalization to the overall visual experience.
-
-5. Custom Designed Splash Screen
-
-UsHub starts with a custom-designed splash screen that adds a touch of uniqueness to the app's initial loading experience.
-
-6. Custom Designed Icon
-
-The app icon is specially designed to be unique and personal, representing the essence of the relationship between Anjali Singh and the user.
+6. **Custom Designed Icon:** The app icon is specially designed to be unique and personal, representing the essence of the relationship between Anjali Singh and the user.
 
 # Free and Fair Use Statement for PHub Color Scheme
 
