@@ -24,25 +24,7 @@ UsHub is a personalized application designed especially for ***my girlfriend***.
 
 5. **Custom Designed Splash Screen:** UsHub starts with a custom-designed splash screen that adds a touch of uniqueness to the app's initial loading experience.
 
-6. **Custom Designed Icon:** The app icon is specially designed to be unique and personal, representing the essence of the relationship between Anjali Singh and the user.
-
-# Free and Fair Use Statement for PHub Color Scheme
-
-The PHub color scheme utilized in the UsHub application is used strictly for aesthetic and design purposes. It is not intended to imply any association or endorsement from the original source.
-
-## Permissions Granted:
-
-1. **Aesthetic Use Only:** The PHub color scheme is employed solely for aesthetic and design elements within the UsHub application.
-
-2. **Non-Commercial Use:** The usage of the PHub color scheme is strictly non-commercial, and no financial gain or profit is derived from its incorporation.
-
-## Restrictions:
-
-1. **Misrepresentation:** The UsHub application does not claim any affiliation or endorsement from the original source of the PHub color scheme. It is essential to avoid any misrepresentation of association.
-
-2. **Inappropriate Content:** The PHub color scheme should not be used in a manner that promotes or associates with inappropriate or offensive content.
-
-3. **Commercial Use:** Any commercial use or exploitation of the PHub color scheme for profit is strictly prohibited without explicit permission from the original rights holder.
+6. **Custom Designed Icon:** The app icon is specially designed to be unique and personal, representing the essence of the relationship between Anjali Singh and the used.
 
 ## Disclaimer:
 
